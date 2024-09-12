@@ -134,7 +134,6 @@ function myFunction2(){
 }
 
 
-//Factorial 
 function myFunction3(){
     let sum = 0;
     let n = prompt("Enter a number")
@@ -142,5 +141,5 @@ function myFunction3(){
     for (i = 1; i <= n; i++){
         sum += i*1
     }
-    onclick = document.getElementById("demo3").innerHTML = "The factorial of " + n + " is " + sum
+    onclick = document.getElementById("demo3").innerHTML = "The sum of first " + n + " numbers is " + sum
 }
