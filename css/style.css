@@ -4,3 +4,20 @@
     font-size: 30px;
     background-color: orangered;
 }
+button{
+    color: white;
+    background-color: green;
+    border: 2px solid green;
+    font-size: 17px;
+    font-weight: 600;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+button:hover{
+    color: green;
+    background-color: black;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+}
