@@ -115,17 +115,18 @@ function myFunction1(){
 // Chapter 3
 // Loops
 
-// function myFunction2(){
-//     text = "";
-//     for (i = 0; i < 10; i++){
-//         text += i + "<br>"
-//     }
-//     document.getElementById("demo2").innerHTML = text;
-// }
+
+    text = "";
+    for (i = 0; i < 10; i++){
+        text +="[" +  i + "]"
+    }
+    document.getElementById("Demo3").innerHTML = text;
+
 
 function myFunction2(){
     sum = 0;
     let n = prompt("Enter a number")
+    n = Number.parseInt(n)
     for(i = 0; i < n; i++){
         sum += i+1;
     }
@@ -133,3 +134,13 @@ function myFunction2(){
 }
 
 
+//Factorial 
+function myFunction3(){
+    let sum = 0;
+    let n = prompt("Enter a number")
+    n = Number.parseInt(n)
+    for (i = 1; i <= n; i++){
+        sum += i*1
+    }
+    onclick = document.getElementById("demo3").innerHTML = "The factorial of " + n + " is " + sum
+}
