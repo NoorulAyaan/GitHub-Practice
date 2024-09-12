@@ -29,6 +29,14 @@
 // }
 
 
+// Ternary operator
+// let a = prompt("Hey what's your age")
+// a = Number.parseInt(a)  //parseint() converts a string into a number
+
+// document.getElementById("demo2").innerHTML = "You are " + (a < 33 ? "Fail" : "Pass");
+// If a < 33 print fail otherwise print pass
+
+
 function myFunction(){
     let day;
     switch (new Date().getDay()) {
@@ -53,7 +61,50 @@ function myFunction(){
         case 6:
             day = "Satureday"
     }
-    onclick = document.getElementById("demo1").innerHTML = "Today is " + day
+    onclick = document.getElementById("demo").innerHTML = "Today is " + day
 }
+
+function myFunction1(){
+    let Age = prompt("Hey what's your age?");
+    Age = Number.parseInt(Age)
+    switch(Age){
+        case 12:
+            Age = "You are born in 2012"
+            break;
+
+        case 13:
+            Age = "You are born in 2011";
+            break;
+
+        case 14:
+            Age = "You are born in 2010";
+            break;
+
+        case 15:
+            Age = "You are born in 2009"
+            break;
+
+        case 16:
+            Age = "You are born in 2008"
+            break;
+
+        case 17:
+            Age = "You are born in 2007"
+            break;
+
+        case 18:
+            Age = "You are born in 2006"
+            break;
+        default:
+            if(Age > 18){
+                Age = "You are born before 2006"
+            }
+            else{
+                Age = "Your input is invalid "
+            }
+    }
+    onclick = document.getElementById("demo1").innerHTML = Age
+}
+
 
 
