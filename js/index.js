@@ -1,3 +1,6 @@
+// Chapter 2
+// Conditional Expressions
+
 //document.getElementById('demo').innerHTML = typeof prompt()
 
 // let a = prompt("Hey whats your age")
@@ -64,6 +67,8 @@ function myFunction(){
     onclick = document.getElementById("demo").innerHTML = "Today is " + day
 }
 
+
+// Test for chapter 2
 function myFunction1(){
     let Age = prompt("Hey what's your age?");
     Age = Number.parseInt(Age)
@@ -107,5 +112,24 @@ function myFunction1(){
 }
 
 
+// Chapter 3
+// Loops
+
+// function myFunction2(){
+//     text = "";
+//     for (i = 0; i < 10; i++){
+//         text += i + "<br>"
+//     }
+//     document.getElementById("demo2").innerHTML = text;
+// }
+
+function myFunction2(){
+    sum = 0;
+    let n = prompt("Enter a number")
+    for(i = 0; i < n; i++){
+        sum += i+1;
+    }
+    onclick = document.getElementById("demo2").innerHTML = "The sum of first " + n + " numbers is " + sum;
+}
 
 
