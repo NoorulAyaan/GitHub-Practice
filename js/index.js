@@ -130,16 +130,55 @@ function myFunction2(){
     for(i = 0; i < n; i++){
         sum += i+1;
     }
-    onclick = document.getElementById("demo2").innerHTML = "The sum of first " + n + " numbers is " + sum;
+    onclick = document.getElementById("demo2").innerHTML = 
+    "The sum of first " + n + " numbers is " + sum;
 }
 
+// function myFunction3(){
+//     let sum = "";
+//     n = prompt("Enter a number:")
+//     n = Number.parseInt(n)
+//     for (i = 0; i < n; i++){
+//         sum += i+1 + "<br>"
+//     }
+//     document.getElementById("demo3").innerHTML = sum;
+// }
 
 function myFunction3(){
-    let sum = 0;
+    let sum = ""
     let n = prompt("Enter a number")
     n = Number.parseInt(n)
-    for (i = 1; i <= n; i++){
-        sum += i*1
+    for (i = 0; i < n; i++){
+        sum += i+1 + "<br>"
     }
-    onclick = document.getElementById("demo3").innerHTML = "The sum of first " + n + " numbers is " + sum
+    onclick = document.getElementById("demo3").innerHTML = 
+    "The sum of first " + n + " numbers is " + "<br>" + sum
 }
+
+
+// For in loop
+
+// function myFunction4(){
+//     let obj = {
+//         Ayan: 90,
+//         Israr: 87,
+//         Fahad: 89,
+//         Iqrar: 93
+//     }
+//     for(let a in obj){
+//         document.getElementById("demo4").innerHTML +=
+//         "Marks of " + a + " Are " + obj[a] + "<br>"
+//     }
+//     document.getElementById("demo4").innerHTML = ""
+// }
+
+
+// For of loop
+
+// function myFunction4(){
+//     let n = prompt("Enter a name")
+//     document.getElementById("demo4").innerHTML = ""
+//     for(let a of n){
+//         document.getElementById("demo4").innerHTML += a + "<br>"
+//     }
+// }
