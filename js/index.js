@@ -156,22 +156,6 @@ function myFunction3(){
 }
 
 
-// For in loop
-
-// function myFunction4(){
-//     let obj = {
-//         Ayan: 90,
-//         Israr: 87,
-//         Fahad: 89,
-//         Iqrar: 93
-//     }
-//     for(let a in obj){
-//         document.getElementById("demo4").innerHTML +=
-//         "Marks of " + a + " Are " + obj[a] + "<br>"
-//     }
-//     document.getElementById("demo4").innerHTML = ""
-// }
-
 
 // For of loop
 
@@ -182,3 +166,159 @@ function myFunction3(){
 //         document.getElementById("demo4").innerHTML += a + "<br>"
 //     }
 // }
+
+
+// For in loop
+
+function myFunction4(){
+    let obj = {
+        Ayan: 90,
+        Israr: 87,
+        Fahad: 89,
+        Iqrar: 93
+    }
+    document.getElementById("demo4").innerHTML = ""
+    for(let a in obj){
+        document.getElementById("demo4").innerHTML +=
+        "Marks of " + a + " Are " + obj[a] + "<br>"
+    }
+}
+
+// While Loop
+
+// function myFunction5(){
+//     let n = prompt("Enter a number")
+//     n = Number.parseInt(n)
+//     document.getElementById("demo5").innerHTML = ""
+//     let index = 0;
+//     while(index <= n){
+//         document.getElementById("demo5").innerHTML += 
+//         "Hello this is " + index + "<br>"
+//         index = index + 1
+//     }
+// }
+// While loop
+
+function myFunction5(){
+    let a = prompt("Enter a number")
+    a = Number.parseInt(a)
+    document.getElementById("demo5").innerHTML = ""
+    let i = 0
+    while(i <= a){
+        document.getElementById("demo5").innerHTML += 
+        "Hello this is " + i + "<br>"
+        i++
+    }
+}
+
+// Do whlie loop
+
+
+function myFunction6(){
+    let n = prompt("Enter a number")
+    n = Number.parseInt(n)
+    document.getElementById("demo6").innerHTML = ""
+    let i = 0;
+    do{
+        document.getElementById("demo6").innerHTML += "This is " + i + "<br>"
+        i = i+1
+    }while(i <= n)
+}
+
+
+// Functions
+
+// function onePlusTwo(a, b){
+//     return 5 + (a * b)
+// }
+// function onePlusTwoThree(a, b, c){
+//     return 5 + (a * b * c) 
+// }
+// let x = 3;
+// let y = 4;
+// let z = 5;
+
+// document.getElementById("demo10").innerHTML = onePlusTwoThree(x, y,z)
+// document.getElementById("demo7").innerHTML = 
+// "The sum of x and y is: " + onePlusTwo(x , y);
+// document.getElementById("demo8").innerHTML = 
+// "The sum of y and z is: " + onePlusTwo(z , y);
+// document.getElementById("demo9").innerHTML = 
+// "The sum of z and x is: " + onePlusTwo(z , x);
+
+
+
+// const Hello = (x, y) => {
+//     return x + y
+// }
+// let t = 22
+// let v = 24
+// document.getElementById("demo11").innerHTML = 
+// Hello(t, v)
+
+
+//Chapter 3 Q1
+
+// function myFunction7(){
+//     let marks = {
+//         Harry: 98,
+//         Rohan: 70,
+//         Akash: 7
+//     }
+//     document.getElementById("demo7").innerHTML = ""
+//     for (i = 0; i < Object.keys(marks).length; i++){
+//         //[Object.keys(marks)] will give all the keys inside the object
+//         document.getElementById("demo7").innerHTML += 
+//         "The marks of " + Object.keys(marks)[i] + " are: " +
+//         marks[Object.keys(marks)[i]] + "<br>"
+//         i = i++
+        
+//     }
+// }
+
+
+// Chapter 3 Q2
+
+// let make = {
+//     Harry: 98,
+//     Rohan: 70,
+//     Jaddu: 76,
+//     Krunal: 89,
+//     Akash: 7
+// }
+// document.getElementById("demo8").innerHTML = ""
+// for (s in make){
+//     document.getElementById("demo8").innerHTML += 
+//     "Total marks of " + s + " are: " + make[s] + " marks" + "<br>"
+// }
+
+// Chapter 3 Q3
+
+function myFunction7(){
+    let t = 10;
+    let p; 
+
+    while(p != t){
+        p = prompt("Enter a number")
+        p = Number.parseInt(p)
+        document.getElementById("demo7").innerHTML = 
+        "You entered: " + p + "<br>"
+    }
+    document.getElementById("demo7").innerHTML += 
+    "You have entered correct number"
+}
+
+
+// Chapter 3 Q4
+
+
+function myFunction8() {
+    return a + b + c + d + e / 5
+}                          
+let a = 3
+let b = 5
+let c = 2
+let d = 8
+let e = 6
+document.getElementById("demo8").innerHTML = 
+myFunction8(a, b, c, d, e)
