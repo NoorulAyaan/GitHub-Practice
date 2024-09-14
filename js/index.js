@@ -322,3 +322,43 @@ let d = 8
 let e = 6
 document.getElementById("demo8").innerHTML = 
 myFunction8(a, b, c, d, e)
+
+
+// Strings
+
+function myFunction9(){
+    // let name = "Ayan"
+    // document.getElementById("demo9").innerHTML = name.length
+
+    let boy1 = "Pramood"
+    let boy2 = "Nikhil"
+    document.getElementById("demo9").innerHTML = 
+    `${boy1} is friend of ${boy2}`
+}
+
+
+// function myFunction9(){
+//     let fruits = 'Banana\'s'
+//     document.getElementById("demo9").innerHTML = fruits
+// }
+
+function myFunction10(){
+    let name = "ayan"
+    document.getElementById("demo10").innerHTML = 
+    name.toUpperCase()
+    // document.getElementById("demo10").innerHTML = 
+    // name.length
+    // document.getElementById("demo10").innerHTML = 
+    // name.toLowerCase()
+    // document.getElementById("demo10").innerHTML = 
+    // name.slice(1,2)
+    document.getElementById("demo10").innerHTML = 
+    name.replace("ay","Aya")
+}
+
+function myFunction11(){
+    let name = "Ayan "
+    let friend = "Khan"
+    document.getElementById("demo11").innerHTML =
+    name.concat(friend)
+}
