@@ -362,3 +362,19 @@ function myFunction11(){
     document.getElementById("demo11").innerHTML =
     name.concat(friend)
 }
+
+
+// function myFunction12(){
+//     for(i=0; i<=10; i++){
+//         document.getElementById("demo12").innerHTML += i +"<br>"
+//     }
+// }
+
+// function myFunction12(){
+//     let i = 3;
+//     while(i > 0){
+//         document.getElementById("demo12").innerHTML += i + "<br>"
+//         i--
+//     }
+// }
+
